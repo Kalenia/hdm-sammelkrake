@@ -61,7 +61,7 @@ for($row_idx = 1; $row_idx < count($schedule->tr); $row_idx++){
 	</tr>
 <?php foreach($blocks as $block): ?>
 	<tr>
-		<th><?= reset(explode(' ', $block['time'])) ?></th>
+		<th><?= explode(' ', $block['time'])[0] ?></th>
 <?php	for($i = 1; $i <= 6; $i++): ?>
 <?php		$lectures = $block[$i] ?>
 <?php		if ( count($lectures) == 1 ): ?>
