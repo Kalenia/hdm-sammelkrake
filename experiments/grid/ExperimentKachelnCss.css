@@ -1,0 +1,45 @@
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-rows:200px 1fr 200px 200px;
+    grid-template-columns: 20% 550px 550px 550px;
+
+}
+
+article {
+    background: gold;
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:4;
+}
+
+aside {
+    background:lightgreen;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:4;
+}
+
+.tiles li {
+    cursor: pointer;
+    height: 120px;
+    width: 200px;
+    margin: 10px 0 0 10px;
+    background: #ddd;
+    position: relative;
+    float: left;
+    padding: 15px;
+    list-style: none;
+
+}
+
+.tiles {
+    width: 830px
+}
+
+.tiles #schedule {
+    width: 410px;
+    height: 240px;
+}
