@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <title>HdM Sammelkrake</title>
     <link rel="stylesheet" href="ExperimentKachelnCss.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
 
     <div class="wrapper">
-        <aside> HIER IST DAS MENU </aside>
+        <aside>
+            <ul class="sidenav">
+                <img class="menubild" src="img/images.jpg" alt="menubild">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </aside>
         <article>
             <ul class="tiles">
-                <li id="officialNews">
+
+
+                <li>
+                    <div class="card effect__click">
+                        <div class="card__front">
+                            <span class="title">Official News</span>
+                            <div class="content"> Lorem ipsum dolor sit amet ... Bla </div>
+                        </div>
+                        <div class="card__back">
+                            <span class="title">Official News</span>
+                            <div class="content"> Hier stehen die offiziellen News. Stell dir vor hier stehen ganz
+                                aufregende und spannende Dinge </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- <li id="officialNews">
                     <span class="title">Official News</span>
                     <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
+                </li> -->
                 <li id="kürzelKai">
                     <span class="title">Kürzel Kai</span>
                     <div class="content"> Lorem ipsum dolor sit amet ... </div>
@@ -55,6 +81,8 @@
             </ul>
         </article>
     </div>
+
+    <script src="js/javascript.js"></script>
 
 </body>
 </html>
