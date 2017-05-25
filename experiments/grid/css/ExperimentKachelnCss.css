@@ -1,0 +1,137 @@
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-rows:   200px 200px  200px 200px 200px;
+    grid-template-columns: 20% 26% 27% 27%;
+    margin: 0;
+}
+
+aside {
+    background:blue;
+    grid-column: 1 / span 1;  grid-row: 1 / span 1;
+    height: 100%;
+}
+
+.offWorkingStuff {
+    background: cadetblue;
+    grid-column: 2 / span 1;  grid-row: 1 / span 1;
+    padding: 7%;
+}
+
+.officialNews {
+    background: cornflowerblue;
+    grid-column: 3 / span 1;  grid-row: 1 /span 1;
+    padding: 7%;
+}
+
+.studentsStuff {
+    background: lightskyblue;
+    grid-column: 4 / span 1;  grid-row: 1 / span 1;
+    padding: 7%;
+}
+
+.ownCloud {
+    background: palevioletred;
+    grid-column: 2 / span 1;  grid-row: 2 / span 1;
+    padding: 7%;
+}
+
+.schedule {
+    background: red;
+    grid-column: 3 /span 2;  grid-row: 2 / span 2;
+    padding: 7%;
+}
+
+.kennstDuSchon {
+    background: blue;
+    grid-column: 2 / span 1;  grid-row: 3 / span 2;
+    padding: 7%;
+}
+
+.kurzelKai {
+    background: yellow;
+    grid-column: 3 / span 1;  grid-row: 5 / span 1;
+    padding: 7%;
+}
+
+.importantNews {
+    background: yellow;
+    grid-column: 4 / span 1;  grid-row: 5 / span 1;
+    padding: 7%;
+}
+.sbar {
+    background: lightgreen;
+    grid-column: 4 / span 1;  grid-row: 4 / span 1;
+    padding: 7%;
+}
+
+.mensa {
+    background: limegreen;
+    grid-column: 3 / span 1;  grid-row: 4 / span 1;
+    padding: 7%;
+}
+
+.calendar {
+    background: purple;
+    grid-column: 2 / span 1 ; grid-row: 5 / span 1;
+    padding: 7%;
+
+}
+
+.kennstDuSchon img {
+    width: 26%;
+    height: 26%;
+    padding: 5%;
+}
+
+body {margin: 0;}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: mistyrose;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+aside ul li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+aside ul li a.active {
+    background-color: lightsalmon;
+    color: white;
+}
+
+aside ul  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+/* Layout für 900px Größe in der Breite */
+@media screen and (max-width: 900px) {
+    aside ul{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    aside ul li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+/* Layout für 400px Größe in der Breite */
+@media screen and (max-width: 400px) {
+    aside ul li a {
+        text-align: center;
+        float: none;
+    }
+}

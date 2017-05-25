@@ -1,17 +1,28 @@
+<?php
+
+if ( ! isset($_SERVER['PHP_AUTH_USER']) ) {
+	header('WWW-Authenticate: Basic realm="Sammelkrake"');
+	header('HTTP/1.0 401 Unauthorized');
+	die("Bitte mit deinem HdM-Account anmelden");
+}
+
+const ROOT_PATH = '..';
+require_once(ROOT_PATH . '/include/view_helpers.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>HdM Sammelkrake</title>
-    <link rel="stylesheet" href="ExperimentKachelnCss.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
-    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/ExperimentKachelnCss.css">
 </head>
 <body>
 
     <div class="wrapper">
         <aside>
-            <ul class="sidenav">
+            <ul>
                 <img class="menubild" src="img/images.jpg" alt="menubild">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
@@ -19,70 +30,61 @@
                 <li><a href="#about">About</a></li>
             </ul>
         </aside>
-        <article>
-            <ul class="tiles">
 
+            <div class="offWorkingStuff">
+                <span class="title"> Offizielles Arbeitsmaterial </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="officialNews">
+                <span class="title"> Offizielle News </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="studentsStuff">
+            <span class="title"> Deine Informationen </span>
+            <div> Lorem Ipsum dolor set ....... </div>
+            </div>
 
-                <li>
-                    <div class="card effect__click">
-                        <div class="card__front">
-                            <span class="title">Official News</span>
-                            <div class="content"> Lorem ipsum dolor sit amet ... Bla </div>
-                        </div>
-                        <div class="card__back">
-                            <span class="title">Official News</span>
-                            <div class="content"> Hier stehen die offiziellen News. Stell dir vor hier stehen ganz
-                                aufregende und spannende Dinge </div>
-                        </div>
-                    </div>
-                </li>
+            <div class="ownCloud">
+                <span class="title"> OwnCloud </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="schedule">
+                <span class="title"> Dein persönlicher Stundenplan </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
 
-                <!-- <li id="officialNews">
-                    <span class="title">Official News</span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li> -->
-                <li id="kürzelKai">
-                    <span class="title">Kürzel Kai</span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
-                <li id="kennstDuSchon">
-                    <span class="title">Kennst du schon ... ? </span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
-                <li id="mensa">
-                    <span class="title">Mensa Wochenplan </span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
-                <li id="schedule">
-                    <span class="title">Stundenplan</span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
-                <li id="sBar">
-                    <span class="title">SBar Wochenplan </span>
-                    <div class="content"> Lorem ipsum dolor sit amet ...</div>
-                </li>
-                <li id="ownCloud">
-                    <span class="title">Official Infos </span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
-                <li id="studentsStuff">
-                    <span class="title">Official Infos </span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
-                <li id="officialInfos">
-                    <span class="title">Official Infos </span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
-                <li id="officialWorkingStuff">
-                    <span class="title">Official Infos </span>
-                    <div class="content"> Lorem ipsum dolor sit amet ... </div>
-                </li>
+            <div class="kennstDuSchon">
+                <span class="title"> Kennst du schon ... ? </span>
+                <div id="picture">
+                    <img src="img/fetchPhoto.jpeg" />
+                </div>
+                <div id="name">
+                    Ludwig Kösling
+                </div>
+            </div>
+            <div class="kurzelKai">
+                <span class="title"> Kürzel Kai </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="importantNews">
+                <span class="title"> Wichtige Meldungen </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
 
-            </ul>
-        </article>
+        <div class="sbar">
+            <span class="title"> S Bar Menü </span>
+            <div> Lorem Ipsum dolor set ....... </div>
+        </div>
+        <div class="mensa">
+            <span class="title"> Mensa Menü </span>
+            <div> Lorem Ipsum dolor set ....... </div>
+        </div>
+        <div class="calendar">
+            <span class="title"> Kalender </span>
+            <div> Kalender </div>
+        </div>
+
     </div>
-
-    <script src="js/javascript.js"></script>
 
 </body>
 </html>

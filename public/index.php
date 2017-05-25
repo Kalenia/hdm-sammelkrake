@@ -10,49 +10,57 @@ const ROOT_PATH = '..';
 require_once(ROOT_PATH . '/include/view_helpers.php');
 
 ?>
+
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>HdM Sammelkrake</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<script src="scripts/jquery.js"></script>
-	<script src="scripts/jquery.grid.js"></script>
-	<script>
-		$(document).ready(function(){
-			$(window).resize(function(){
-				$('section').grid({ 'cell-width': 145, 'cell-height': 200, 'cell-spacing': 10 })//.triggerHandler('debug');
-			});
-			$(window).resize();
-		});
-	</script>
+    <meta charset="UTF-8">
+    <title>HdM Sammelkrake</title>
+    <link rel="stylesheet" href="css/ExperimentKachelnCss.css">
 </head>
 <body>
 
-<header>
-	<h1><a href="/">HdM Sammelkrake</a></h1>
-	<p>Eine kleine Karte der Informationsquellen rund um die HdM</p>
-	
-	<ul id="legend">
-		<li class="official changing" title="Teilweise tägliche Meldungen aus offiziellen Informationskanälen der HdM"><span>Aktuelle offizielle Infos</span></li>
-		<li class="official" title="Informationsquellen für dein Studium"><span>Offizielle Informationsquellen</span></li>
-		<li class="social"><span>Soziales</span></li>
-		<!--<li class="projects" title="z.B. Projekte"><span>Eigene Aktivitäten</span></li>-->
-		<li class="misc"><span>Sonstiges</span></li>
-	</ul>
-</header>
+    <div class="wrapper">
+        <aside>
+            <ul>
+                <img class="menubild" src="img/images.jpg" alt="menubild">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </aside>
 
-<section id="tiles">
 
-<?php foreach( glob('../tiles/*.php') as $tile ): ?>
-<?php	include($tile) ?> 
-<?php endforeach ?>
+            <div class="officialNews">
+                <span class="title"> Offizielle News </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="kennstDuSchon">
+                <span class="title"> Kennst du schon ... ? </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="ownCloud">
+                <span class="title"> OwnCloud </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="sBar">
+                <span class="title"> Speiseplan der S Bar </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="schedule">
+                <span class="title"> Dein persönlicher Stundenplan </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
+            <div class="studentsStuff">
+                <span class="title"> Deine Informationen </span>
+                <div> Lorem Ipsum dolor set ....... </div>
+            </div>
 
-</section>
 
-<div id="details" class="inactive">
-	<article></article>
-</div>
+    </div>
+
+
 
 </body>
 </html>
