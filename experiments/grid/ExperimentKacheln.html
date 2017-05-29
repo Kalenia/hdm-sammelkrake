@@ -1,29 +1,16 @@
-<?php
-
-if ( ! isset($_SERVER['PHP_AUTH_USER']) ) {
-	header('WWW-Authenticate: Basic realm="Sammelkrake"');
-	header('HTTP/1.0 401 Unauthorized');
-	die("Bitte mit deinem HdM-Account anmelden");
-}
-
-const ROOT_PATH = '..';
-require_once(ROOT_PATH . '/include/view_helpers.php');
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>HdM Sammelkrake</title>
     <link rel="stylesheet" href="css/ExperimentKachelnCss.css">
+
 </head>
 <body>
-
     <div class="wrapper">
         <aside>
             <ul>
-                <img class="menubild" src="img/images.jpg" alt="menubild">
+
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -56,7 +43,7 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
             <div class="kennstDuSchon">
                 <span class="title"> Kennst du schon ... ? </span>
                 <div id="picture">
-                    <img src="img/fetchPhoto.jpeg" />
+
                 </div>
                 <div id="name">
                     Ludwig Kösling

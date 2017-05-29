@@ -8,7 +8,7 @@
 
 aside {
     background:blue;
-    grid-column: 1 / span 1;  grid-row: 1 / span 1;
+    grid-column: 1 / span 1;  grid-row: 1 / span 5;
     height: 100%;
 }
 
@@ -86,52 +86,33 @@ aside {
 
 body {margin: 0;}
 
-aside ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: mistyrose;
-    position: fixed;
+.icon-bar {
+    width: 100%; /* Set a specific width */
     height: 100%;
-    overflow: auto;
+    background-color: #555; /* Dark-grey background */
 }
 
-aside ul li a {
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: left; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: black; /* Add an active/current color */
+}
+
+.menubild{
     display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-aside ul li a.active {
-    background-color: lightsalmon;
-    color: white;
-}
-
-aside ul  li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-
-/* Layout für 900px Größe in der Breite */
-@media screen and (max-width: 900px) {
-    aside ul{
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    aside ul li a {
-        float: left;
-        padding: 15px;
-    }
-    div.content {margin-left: 0;}
-}
-
-/* Layout für 400px Größe in der Breite */
-@media screen and (max-width: 400px) {
-    aside ul li a {
-        text-align: center;
-        float: none;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

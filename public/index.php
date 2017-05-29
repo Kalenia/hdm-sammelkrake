@@ -17,17 +17,20 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
     <meta charset="UTF-8">
     <title>HdM Sammelkrake</title>
     <link rel="stylesheet" href="style/styleTest.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
     <div class="wrapper">
         <aside>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+            <div class="icon-bar">
+                <img class="menubild" src="imgs/tintenfisch.png" alt="menubild">
+                <a class="active" href="#">
+                    <i class="fa fa-home"> Home</i></a>
+                <a href="#"><i class="fa fa-info-circle"> About</i></a>
+                <a href="#"><i class="fa fa-address-card"> Contact</i></a>
+            </div>
         </aside>
 
             <div class="offWorkingStuff">
