@@ -75,7 +75,7 @@ if (count($numbers) > 0) {
 		list($date, $subject, $from, $sender, $reply_to, $to, $cc, $bcc, $in_reply_to, $message_id) = $structure['envelope'];
 		//printf("- %s: %s from %s at %s\n", $number, MailParser::decode_words($subject), MailParser::decode_words($from[0][0]), date('Y-m-d G:i', strtotime($date)));
 		$messages[] = array(
-			'date' => strtotime($date),
+			'date' => @strtotime($date),
 			'subject' => MailParser::decode_words($subject),
 			'from' => MailParser::decode_words($from[0][0]),
 			'imap_message_num' => $number

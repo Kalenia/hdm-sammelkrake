@@ -18,6 +18,8 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="../style/Calendar.css" media="screen">
+
     <script src="scripts/jquery.js"></script>
     	<script src="scripts/jquery.grid.js"></script>
     	<script>
@@ -45,7 +47,7 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
             <article class="offWorkingStuff">
                 <span class="title"> Offizielles Arbeitsmaterial </span>
                 <div>
-                    <?php include("../tiles/ideas/03-offical-working-stuff")?>
+                    <?php include("../tiles/ideas/03-official-working-stuff.php")?>
                 </div>
             </article>
             <article class="officialNews">
@@ -56,7 +58,9 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
             </article>
             <article class="studentsStuff">
             <span class="title"> Deine Informationen </span>
-            <div> Lorem Ipsum dolor set ....... </div>
+            <div>
+                <?php include("../tiles/ideas/06-students-stuff.php")?>
+            </div>
             </article>
 
             <article class="ownCloud">
@@ -64,7 +68,7 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
                 <div> Lorem Ipsum dolor set ....... </div>
             </article>
             <article class="schedule">
-                <span class="title"> Dein persönlicher Stundenplan </span>
+
                 <div>
                     <?php include("../tiles/02-schedule.php")?>
                 </div>
@@ -104,15 +108,13 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
         </article>
         <article class="calendar">
             <span class="title"> Kalender </span>
-            <div>
-            <?php include('11-Calendar.html'); ?>
-             </div>
+             <div id="calendar"></div>
         </article>
 
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="js/jquery-ui-datepicker.min.js"></script>
+    <script src="../scripts/jquery-ui-datepicker.min.js"></script>
 
     <script>
         $('#calendar').datepicker({
