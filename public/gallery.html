@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>HdM Sammelkrake</title>
-	<link rel="stylesheet" type="text/css" href="/public/style/styleTest.css">
+	<link rel="stylesheet" type="text/css" href="/style/styleTest.css">
 
-	<script src="/public/scripts/jquery.js"></script>
+	<script src="/scripts/jquery.js"></script>
 	<script>
 		$(document).ready(function(){
 			$.getJSON("gallery.json.php").done(function(semester_list){
@@ -27,7 +27,7 @@
 						var name = keys[i];
 						var image_url = gallery[name];
 						$("<li>").text(name).append(
-							$("<img>").attr("src", image_url)
+							$("<img>").attr("src", "gallery.json.php?image=" + encodeURIComponent(image_url))
 						).appendTo(list);
 					}
 				});
