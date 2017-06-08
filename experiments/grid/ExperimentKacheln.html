@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <title>HdM Sammelkrake</title>
     <link rel="stylesheet" href="css/ExperimentKachelnCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/calendar.css" media="screen">
 
 </head>
 <body>
     <div class="wrapper">
         <aside>
-            <ul>
 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+            <div class="icon-bar">
+                <!--  <a href="#"><img src="img/krakenlogoklein.png" alt="Selfhtml" /></a> -->
+                <a class="active"  href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-home"></i></a>
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+                <a href="#"><i class="fa fa-globe"></i></a>
+                <a href="#"><i class="fa fa-trash"></i></a>
+            </div>
+
         </aside>
+
+
 
             <div class="offWorkingStuff">
                 <span class="title"> Offizielles Arbeitsmaterial </span>
@@ -67,11 +76,25 @@
             <div> Lorem Ipsum dolor set ....... </div>
         </div>
         <div class="calendar">
-            <span class="title"> Kalender </span>
-            <div> Kalender </div>
+            <div id="calendar"></div>
         </div>
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/jquery-ui-datepicker.min.js"></script>
+
+    <script>
+        $('#calendar').datepicker({
+            inline: true,
+            firstDay: 1,
+            showOtherMonths: true,
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        });
+    </script>
+
+
+
 
 </body>
 </html>

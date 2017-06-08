@@ -72,7 +72,7 @@ aside {
 }
 
 .calendar {
-    background: purple;
+
     grid-column: 2 / span 1 ; grid-row: 5 / span 1;
     padding: 7%;
 

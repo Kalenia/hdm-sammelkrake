@@ -1,5 +1,5 @@
 .calendar_link {
-    font-family: Arial;
+    font-family: Calibri;
     font-size: 12px;
     text-align: center;
     color: #000000;
@@ -8,15 +8,15 @@
 }
 
 .calendar_head {
-    font-family: Arial;
+    font-family: Calibri;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
-    width: 25px;
+    width: 90px;
 }
 
 .calendar_head_month {
-    font-family: Arial;
+    font-family: Calibri;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -26,7 +26,7 @@
 }
 
 .calendar_day {
-    font-family: Arial;
+    font-family: Calibri;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
@@ -36,7 +36,7 @@
 }
 
 .calendar_entry {
-    font-family: Arial;
+    font-family: Calibri;
     font-size: 12px;
     text-align: center;
 }
