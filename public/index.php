@@ -34,15 +34,6 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
 <body>
 
     <div class="wrapper">
-        <aside>
-            <div class="icon-bar">
-                <img class="menubild" src="imgs/tintenfisch.png" alt="menubild">
-                <a class="active" href="#">
-                    <i class="fa fa-home"> Home</i></a>
-                <a href="#"><i class="fa fa-info-circle"> About</i></a>
-                <a href="#"><i class="fa fa-address-card"> Contact</i></a>
-            </div>
-        </aside>
 
             <article class="offWorkingStuff">
                 <span class="title"> Offizielles Arbeitsmaterial </span>
