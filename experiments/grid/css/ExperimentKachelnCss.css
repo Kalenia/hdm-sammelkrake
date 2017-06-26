@@ -2,7 +2,7 @@
     display: grid;
     width: 100%;
     grid-template-rows:   200px 200px  200px 200px 200px;
-    grid-template-columns: 20% 26% 27% 27%;
+    grid-template-columns: 0% 33.33% 33.33% 33.34%;
     margin: 0;
 }
 
@@ -13,9 +13,11 @@ aside {
 }
 
 .offWorkingStuff {
-    background: cadetblue;
+    background-image: url("../img/fetchPhoto.jpeg");
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     grid-column: 2 / span 1;  grid-row: 1 / span 1;
-    padding: 7%;
+    padding: 0%;
+
 }
 
 .officialNews {
@@ -39,7 +41,7 @@ aside {
 .schedule {
     background: red;
     grid-column: 3 /span 2;  grid-row: 2 / span 2;
-    padding: 7%;
+    padding: 0%;
 }
 
 .kennstDuSchon {
@@ -134,4 +136,8 @@ aside ul  li a:hover:not(.active) {
         text-align: center;
         float: none;
     }
+
+
+
+    
 }
