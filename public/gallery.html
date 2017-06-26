@@ -27,7 +27,7 @@
 						var name = keys[i];
 						var image_url = gallery[name];
 						$("<li>").text(name).append(
-							$("<img>").attr("src", image_url)
+							$("<img>").attr("src", "gallery.json.php?image=" + encodeURIComponent(image_url))
 						).appendTo(list);
 					}
 				});

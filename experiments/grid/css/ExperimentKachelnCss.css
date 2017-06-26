@@ -2,22 +2,21 @@
     display: grid;
     width: 100%;
     grid-template-rows:   200px 200px  200px 200px 200px;
-    grid-template-columns: 0% 33.33% 33.33% 33.34%;
+    grid-template-columns: 6% 31% 31% 32%;
     margin: 0;
 }
 
 aside {
-    background:blue;
-    grid-column: 1 / span 1;  grid-row: 1 / span 1;
+    background:green;
+    grid-column: 1 / span 1;  grid-row: 1 / span 5;
     height: 100%;
+    width: 100%;
 }
 
 .offWorkingStuff {
-    background-image: url("../img/fetchPhoto.jpeg");
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    background: cadetblue;
     grid-column: 2 / span 1;  grid-row: 1 / span 1;
-    padding: 0%;
-
+    padding: 7%;
 }
 
 .officialNews {
@@ -41,7 +40,7 @@ aside {
 .schedule {
     background: red;
     grid-column: 3 /span 2;  grid-row: 2 / span 2;
-    padding: 0%;
+    padding: 7%;
 }
 
 .kennstDuSchon {
@@ -74,70 +73,40 @@ aside {
 }
 
 .calendar {
-    background: purple;
+    background: #000000;
     grid-column: 2 / span 1 ; grid-row: 5 / span 1;
-    padding: 7%;
+    padding: 0%;
 
 }
 
 .kennstDuSchon img {
     width: 26%;
     height: 26%;
-    padding: 5%;
+    padding: 0%;
 }
 
 body {margin: 0;}
 
-aside ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: mistyrose;
-    position: fixed;
+/* Naviagation an der Seite */
+.icon-bar {
+    width: 90px; /* Set a specific width */
     height: 100%;
-    overflow: auto;
+    background-color: #555; /* Dark-grey background */
 }
 
-aside ul li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
 }
 
-aside ul li a.active {
-    background-color: lightsalmon;
-    color: white;
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
 }
 
-aside ul  li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-
-/* Layout für 900px Größe in der Breite */
-@media screen and (max-width: 900px) {
-    aside ul{
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    aside ul li a {
-        float: left;
-        padding: 15px;
-    }
-    div.content {margin-left: 0;}
-}
-
-/* Layout für 400px Größe in der Breite */
-@media screen and (max-width: 400px) {
-    aside ul li a {
-        text-align: center;
-        float: none;
-    }
-
-
-
-    
+.active {
+    background-color: deepskyblue; /* Add an active/current color */
 }
