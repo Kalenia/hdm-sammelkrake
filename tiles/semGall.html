@@ -21,7 +21,7 @@
             });
 
             $("select.semester_list").on("change", function(){
-                var key = $(this).attr("key");
+                var key = $('option:selected', this).attr('key');
                 $.getJSON("gallery.json.php?semester=" + encodeURIComponent(key)).done(function(gallery){
                     var list = $("ul.images").empty();
                     var keys = Object.keys(gallery);
