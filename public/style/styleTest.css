@@ -1,87 +1,63 @@
 .wrapper {
     display: grid;
     width: 100%;
-    grid-template-rows:   250px 250px  250px 250px 250px;
-    grid-template-columns: 0% 33.33% 33.33% 33.33%;
+    grid-template-rows:   250px 250px  250px 250px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     margin: 0;
-}
-
-aside {
-    background:blue;
-    grid-column: 1 / span 1;  grid-row: 1 / span 5;
-    height: 100%;
 }
 
 
 .offWorkingStuff {
-    /*background: #517E7F; */
-    background-image: url("../imgs/t");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    grid-column: 2 / span 1;  grid-row: 1 / span 1;
-    padding: 0%;
-    padding-left: 2%;
-    font-family: Jokerman;
+    background: cadetblue;
+    grid-column: 1 / span 1;  grid-row: 1 / span 1;
 }
 
 .officialNews {
-    background: #56F8FF;
-    grid-column: 3 / span 1;  grid-row: 1 /span 1;
-    padding: 7%;
+    background: cornflowerblue;
+    grid-column: 2 / span 1;  grid-row: 1 /span 1;
 }
 
 .studentsStuff {
-    background: #A3FBFF;
-    grid-column: 4 / span 1;  grid-row: 1 / span 1;
-    padding: 7%;
+    background: lightskyblue;
+    grid-column: 3 / span 1;  grid-row: 1 / span 1;
 }
 
 .ownCloud {
-    background: #2B7C7F;
-    grid-column: 2 / span 1;  grid-row: 2 / span 1;
-    padding: 7%;
+    background: palevioletred;
+    grid-column: 1 / span 1;  grid-row: 2 / span 1;
 }
 
 .schedule {
-    background: #82C9CC;
-    grid-column: 3 /span 2;  grid-row: 2 / span 2;
-    padding: 7%;
+    background: red;
+    grid-column: 2 /span 2;  grid-row: 2 / span 2;
 }
 
 .kennstDuSchon {
     background: blue;
-    grid-column: 2 / span 1;  grid-row: 3 / span 2;
-    padding: 7%;
+    grid-column: 1 / span 1;  grid-row: 3 / span 2;
 }
 
 .kurzelKai {
     background: yellow;
-    grid-column: 3 / span 1;  grid-row: 5 / span 1;
-    padding: 7%;
+    grid-column: 2 / span 1;  grid-row: 5 / span 1;
 }
 
 .importantNews {
     background: yellow;
-    grid-column: 4 / span 1;  grid-row: 5 / span 1;
-    padding: 7%;
+    grid-column: 3 / span 1;  grid-row: 5 / span 1;
 }
 .sbar {
     background: lightgreen;
-    grid-column: 4 / span 1;  grid-row: 4 / span 1;
-    padding: 7%;
+    grid-column:  3 / span 1;  grid-row: 4 / span 1;
 }
 
 .mensa {
     background: limegreen;
-    grid-column: 3 / span 1;  grid-row: 4 / span 1;
-    padding: 7%;
+    grid-column: 2 / span 1;  grid-row: 4 / span 1;
 }
 
 .calendar {
-
-    grid-column: 2 / span 1 ; grid-row: 5 / span 1;
-    padding: 0%;
-
+    grid-column: 1 / span 1 ; grid-row: 5 / span 1;
 }
 
 .kennstDuSchon img {
@@ -91,34 +67,3 @@ aside {
 }
 
 body {margin: 0;}
-
-.icon-bar {
-    width: 100%; /* Set a specific width */
-    height: 100%;
-    background-color: #555; /* Dark-grey background */
-}
-
-.icon-bar a {
-    display: block; /* Make the links appear below each other instead of side-by-side */
-    text-align: left; /* Center-align text */
-    padding: 16px; /* Add some padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font-size */
-}
-
-.icon-bar a:hover {
-    background-color: #000; /* Add a hover color */
-}
-
-.active {
-    background-color: black; /* Add an active/current color */
-}
-
-.menubild{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}

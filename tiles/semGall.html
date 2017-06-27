@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Galerie Orbti</title>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $.getJSON("gallery.json.php").done(function(semester_list){
+                var list = $("select.semester_list");
+                var keys = Object.keys(semester_list);
+                for(var i = 0; i < keys.length; i++) {
+                    var key = keys[i];
+                    var name = semester_list[key];
+                    $("<option>").text(name).attr("key", key).appendTo(list);
+                }
+            });
+
+            $("option.semester_list").on("click", "li", function(){
+                var key = $(this).attr("key");
+                $.getJSON("gallery.json.php?semester=" + encodeURIComponent(key)).done(function(gallery){
+                    var list = $("ul.images").empty();
+                    var keys = Object.keys(gallery);
+                    for(var i = 0; i < keys.length; i++) {
+                        var name = keys[i];
+                        var image_url = gallery[name];
+                        $("<li>").text(name).append(
+                            $("<img>").attr("src", "gallery.json.php?image=" + encodeURIComponent(image_url))
+                        ).appendTo(list);
+                    }
+                });
+            });
+        });
+    </script>
+  </head>
+
+
+  <body>
+
+  <select class="semester_list" style="margin-top: 90%">
+  </select>
+
+  <ul class="images">
+  </ul>
+
+  </body>
+</html>

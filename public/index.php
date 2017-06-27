@@ -15,33 +15,30 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
     <title>HdM Sammelkrake</title>
     <link rel="stylesheet" href="style/styleTest.css">
 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="foundation-6/css/foundation.css">
+    <link rel="stylesheet" href="foundation-6/css/app.css">
+
     <link rel="stylesheet" href="../style/Calendar.css" media="screen">
 
     <script src="scripts/jquery.js"></script>
     	<script src="scripts/jquery.grid.js"></script>
-    	<script>
-    		$(document).ready(function(){
-    			$(window).resize(function(){
-    				$('section').grid({ 'cell-width': 145, 'cell-height': 200, 'cell-spacing': 10 })//.triggerHandler('debug');
-    			});
-    			$(window).resize();
-    		});
-    	</script>
+
 </head>
 <body>
 
     <div class="wrapper">
 
             <article class="offWorkingStuff">
+                <span class="title"> Offizielles Arbeitsmaterial </span>
                 <div>
-                  <img src="imgs/test100.jpg">
                     <?php include("../tiles/ideas/03-official-working-stuff.php")?>
                 </div>
             </article>
             <article class="officialNews">
                 <span class="title"> Offizielle News </span>
                 <div>
-                    <?php include("../tiles/01-official-news.php")?>
+                    <?php include("../tiles/ideas/04-official-infos.php")?>
                 </div>
             </article>
             <article class="studentsStuff">
@@ -65,10 +62,7 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
             <article class="kennstDuSchon">
                 <span class="title"> Kennst du schon ... ? </span>
                 <div id="picture">
-                     <?php include("../tiles/11-semGal.html")?>
-                </div>
-                <div id="name">
-                    Ludwig Kösling
+                     <?php include("../tiles/semGall.html")?>
                 </div>
             </article>
             <article class="kurzelKai">
@@ -95,7 +89,6 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
             <div> Lorem Ipsum dolor set ....... </div>
         </article>
         <article class="calendar">
-            <span class="title"> Kalender </span>
              <div id="calendar"></div>
         </article>
 
@@ -112,5 +105,10 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
             dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
         });
     </script>
+
+        <script src="foundation-6/js/vendor/jquery.js"></script>
+        <script src="foundation-6/js/vendor/what-input.js"></script>
+        <script src="foundation-6/js/vendor/foundation.js"></script>
+        <script src="foundation-6/js/app.js"></script>
 </body>
 </html>

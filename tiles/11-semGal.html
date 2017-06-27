@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
 
-    <link rel="stylesheet" href="/public/Foundation/css/foundation.css">
-    <script src="/scripts/jquery.js"></script>
+    <link rel="stylesheet" href="/public/foundation-6/css/foundation.css">
+    <!-- Insert this within your head tag and after foundation.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+    <link rel="stylesheet" href="/public/foundation-6/css/app.css">
+
+    <script src="/public/scripts/jquery.js"></script>
     <script>
         $(document).ready(function(){
             $.getJSON("gallery.json.php").done(function(semester_list){
@@ -37,6 +43,18 @@
 </head>
 <body>
 
+
+<ul class="images">
+</ul>
+
+
+
+<select class="semester_list">
+</select>
+
+
+
+
 <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
     <ul class="orbit-container">
         <li class="orbit-slide">
@@ -47,15 +65,14 @@
         </li>
         <!-- More slides... -->
     </ul>
+
+    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;</button>
+    <button class="orbit-next"><span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;</button>
 </div>
 
-<ul class="images">
-</ul>
 
-
-
-<select class="semester_list">
-</select>
-
+<script src="/public/foundation-6/js/vendor/what-input.js"></script>
+<script src="/public/foundation-6/js/vendor/foundation.js"></script>
+<script src="/public/foundation-6/js/app.js"></script>
 </body>
 </html>
