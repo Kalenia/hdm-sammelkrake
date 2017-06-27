@@ -15,9 +15,6 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
     <title>HdM Sammelkrake</title>
     <link rel="stylesheet" href="style/styleTest.css">
 
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="../style/Calendar.css" media="screen">
 
     <script src="scripts/jquery.js"></script>
@@ -36,8 +33,8 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
     <div class="wrapper">
 
             <article class="offWorkingStuff">
-                <span class="title"> Offizielles Arbeitsmaterial </span>
                 <div>
+                  <img src="imgs/test100.jpg">
                     <?php include("../tiles/ideas/03-official-working-stuff.php")?>
                 </div>
             </article>
@@ -68,7 +65,7 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
             <article class="kennstDuSchon">
                 <span class="title"> Kennst du schon ... ? </span>
                 <div id="picture">
-                     <?php include("../tiles/gallery.html")?>
+                     <?php include("../tiles/11-semGal.html")?>
                 </div>
                 <div id="name">
                     Ludwig Kösling

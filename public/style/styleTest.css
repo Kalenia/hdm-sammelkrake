@@ -1,8 +1,8 @@
 .wrapper {
     display: grid;
     width: 100%;
-    grid-template-rows:   200px 200px  200px 200px 200px;
-    grid-template-columns: 20% 26% 27% 27%;
+    grid-template-rows:   250px 250px  250px 250px 250px;
+    grid-template-columns: 0% 33.33% 33.33% 33.33%;
     margin: 0;
 }
 
@@ -12,32 +12,38 @@ aside {
     height: 100%;
 }
 
+
 .offWorkingStuff {
-    background: cadetblue;
+    /*background: #517E7F; */
+    background-image: url("../imgs/t");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     grid-column: 2 / span 1;  grid-row: 1 / span 1;
-    padding: 7%;
+    padding: 0%;
+    padding-left: 2%;
+    font-family: Jokerman;
 }
 
 .officialNews {
-    background: cornflowerblue;
+    background: #56F8FF;
     grid-column: 3 / span 1;  grid-row: 1 /span 1;
     padding: 7%;
 }
 
 .studentsStuff {
-    background: lightskyblue;
+    background: #A3FBFF;
     grid-column: 4 / span 1;  grid-row: 1 / span 1;
     padding: 7%;
 }
 
 .ownCloud {
-    background: palevioletred;
+    background: #2B7C7F;
     grid-column: 2 / span 1;  grid-row: 2 / span 1;
     padding: 7%;
 }
 
 .schedule {
-    background: red;
+    background: #82C9CC;
     grid-column: 3 /span 2;  grid-row: 2 / span 2;
     padding: 7%;
 }
