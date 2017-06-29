@@ -20,8 +20,8 @@
                 }
             });
 
-            $("option.semester_list").on("click", "li", function(){
-                var key = $(this).attr("key");
+            $("select.semester_list").on("change", function(){
+                var key = $('option:selected', this).attr('key');
                 $.getJSON("gallery.json.php?semester=" + encodeURIComponent(key)).done(function(gallery){
                     var list = $("ul.images").empty();
                     var keys = Object.keys(gallery);
@@ -38,14 +38,14 @@
     </script>
   </head>
 
-
   <body>
 
-  <select class="semester_list" style="margin-top: 90%">
-  </select>
+    <ul class="images">
+    </ul>
 
-  <ul class="images">
-  </ul>
-
+    <label>
+      <select class="semester_list" style="margin-top: 90%">
+      </select>
+    </label>
   </body>
 </html>
