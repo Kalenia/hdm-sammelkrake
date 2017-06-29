@@ -39,7 +39,6 @@ article,
 aside,
 footer,
 header,
-nav,
 section {
   display: block; }
 
@@ -59,24 +58,6 @@ h1 {
 figcaption,
 figure {
   display: block; }
-
-/**
-     * Add the correct margin in IE 8.
-     */
-figure {
-  margin: 1em 40px; }
-
-/**
-     * 1. Add the correct box sizing in Firefox.
-     * 2. Show the overflow in Edge and IE.
-     */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
 
 /**
      * Add the correct display in IE.
@@ -127,38 +108,6 @@ abbr[title] {
   /* 2 */
   text-decoration: underline dotted;
   /* 2 */ }
-
-/**
-     * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
-     */
-b,
-strong {
-  font-weight: inherit; }
-
-/**
-     * Add the correct font weight in Chrome, Edge, and Safari.
-     */
-b,
-strong {
-  font-weight: bolder; }
-
-/**
-     * 1. Correct the inheritance and scaling of font size in all browsers.
-     * 2. Correct the odd `em` font sizing in all browsers.
-     */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/**
-     * Add the correct font style in Android 4.3-.
-     */
-dfn {
-  font-style: italic; }
 
 /**
      * Add the correct background and color in IE 9-.
@@ -434,16 +383,7 @@ html {
 *::after {
   box-sizing: inherit; }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.5;
-  color: #0a0a0a;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+
 
 img {
   display: inline-block;
@@ -3523,12 +3463,13 @@ table {
   table thead td,
   table tfoot th,
   table tfoot td {
-    padding: 0.5rem 0.625rem 0.625rem;
+    /*padding: 0.5rem 0.625rem 0.625rem; */
     font-weight: bold;
     text-align: left; }
   table tbody th,
   table tbody td {
-    padding: 0.5rem 0.625rem 0.625rem; }
+   /* padding: 0.5rem 0.625rem 0.625rem; */
+  }
   table tbody tr:nth-child(even) {
     border-bottom: 0;
     background-color: #f1f1f1; }

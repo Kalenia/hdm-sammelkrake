@@ -95,6 +95,13 @@ uasort($messages, function($a, $b){
 });
 
 ?>
+<style>
+h2 {
+    font-family: "Georgia";
+    font-style: italic;
+    text-align: center;
+    }
+</style>
 <article id="official-news" class="official changing" data-width="2" data-height="1">
 	<h2>Wichtige Meldungen</h2>
 	<ul>

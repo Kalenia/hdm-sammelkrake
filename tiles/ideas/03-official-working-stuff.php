@@ -12,10 +12,3 @@
 </li>
 </ul>
 </article> 
-<article class="official" id="offizielle-infos" data-width="2" data-height="1"><h2><span class="mw-headline" id="Offizielle_Infos"> Offizielle Infos  </span></h2><ul>
-<li> <a rel="nofollow" class="external text" href="https://vw-online.hdm-stuttgart.de/qisserver/rds?state=user&amp;type=0">SB-Funktion</a> <small>Deine Notenliste und Prüfungsanmeldung</small>
-</li>
-<li> <a rel="nofollow" class="external text" href="http://www.hdm-stuttgart.de/studenten/spo_pruefungsinfos/spo">SPO - Studienprüfungsordnung</a> <small>Rechtliche Regelung deines Studiums</small>
-</li>
-</ul>
-</article> 

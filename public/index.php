@@ -17,7 +17,7 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="foundation-6/css/foundation.css">
-    <link rel="stylesheet" href="foundation-6/css/app.css">
+   <!-- <link rel="stylesheet" href="foundation-6/css/app.css"> -->
 
     <link rel="stylesheet" href="../style/Calendar.css" media="screen">
 
@@ -42,24 +42,20 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
 
             </article>
             <article class="officialNews">
-
               <div>
                     <?php include("../tiles/ideas/04-official-infos.php")?>
-                </div>
+               </div>
             </article>
             <article class="studentsStuff">
-            <span class="title">  </span>
             <div>
                 <?php include("../tiles/12-studentsStuff.html")?>
             </div>
             </article>
 
             <article class="ownCloud">
-                <span class="title"> </span>
                 <div> </div>
             </article>
             <article class="schedule">
-
                 <div>
                     <?php include("../tiles/02-schedule.php")?>
                 </div>
@@ -71,26 +67,21 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
                 </div>
             </article>
             <article class="kürzelKai">
-                <span class="title"> Kürzel Kai </span>
                 <div>
                 <?php include("../tiles/06-kürzelkai.php")?>
                 </div>
             </article>
             <article class="importantNews">
-                <span class="title"> Wichtige Meldungen </span>
                 <div>
                     <?php include("../tiles/01-official-news.php")?>
                 </div>
             </article>
 
         <article class="sbar">
-            <span class="title"> </span>
             <div>
-
             </div>
         </article>
         <article class="mensa">
-            <span class="title"></span>
             <div> </div>
         </article>
         <article class="calendar">

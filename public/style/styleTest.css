@@ -27,7 +27,6 @@
 
 .sel {
     grid-column: 1 / span 3; grid-row: 4 / span 1;
-    padding-bottom: 0%;
 }
 
 
@@ -57,22 +56,22 @@
 }
 
 .schedule {
-    background: red;
+    background: #8ea5ec;
     grid-column: 2 /span 2;  grid-row: 2 / span 2;
 }
 
 .kennstDuSchon {
-    background-color: chartreuse;
+    background-color: #126195;
     grid-column: 1 / span 1;  grid-row: 3 / span 2;
 }
 
 .kürzelKai {
-    background: yellow;
+    background: #1fec82;
     grid-column: 2 / span 1;  grid-row: 5 / span 1;
 }
 
 .importantNews {
-    background: yellow;
+    background: #19ecd9;
     grid-column: 3 / span 1;  grid-row: 5 / span 1;
 }
 .sbar {
@@ -102,10 +101,16 @@
 
 .official-info h2{
     /* font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; */
-    font-family: "Arial";
+    font-family: "Georgia";
     font-style: italic;
     text-align: center;
 
+}
+
+.social h2 {
+    font-family: "Georgia";
+    font-style: italic;
+    text-align: center;
 }
 
 
@@ -115,6 +120,18 @@
 
 }
 
+h2 {
+    font-family: "Georgia";
+    font-style: italic;
+    text-align: center;
+}
 
+.official li {
+    font-size: 15px;
+}
 
 body {margin: 0;}
+
+.schedule table {
+     /*font-size: 16px; */
+}
