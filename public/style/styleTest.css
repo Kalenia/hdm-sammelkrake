@@ -8,12 +8,15 @@
 
 
 .offWorkingStuff {
-    background: cadetblue;
+
     grid-column: 1 / span 1;  grid-row: 1 / span 1;
 }
 
 .officialNews {
-    background: cornflowerblue;
+   /* background-image: url("../imgs/testhintergrund.jpg"); */
+    background-color: #d7ecfa;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     grid-column: 2 / span 1;  grid-row: 1 /span 1;
 }
 
@@ -23,7 +26,9 @@
 }
 
 .ownCloud {
-    background: palevioletred;
+    background-image: url("../imgs/owncloudsoon.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     grid-column: 1 / span 1;  grid-row: 2 / span 1;
 }
 
@@ -47,12 +52,16 @@
     grid-column: 3 / span 1;  grid-row: 5 / span 1;
 }
 .sbar {
-    background: lightgreen;
+    background-image: url("../imgs/sbarV2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     grid-column:  3 / span 1;  grid-row: 4 / span 1;
 }
 
 .mensa {
-    background: limegreen;
+    background-image: url("../imgs/mensa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     grid-column: 2 / span 1;  grid-row: 4 / span 1;
 }
 
@@ -65,5 +74,23 @@
     height: 26%;
     padding: 5%;
 }
+
+
+.official-info h2{
+    /* font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; */
+    font-family: "Arial";
+    font-style: italic;
+    text-align: center;
+
+}
+
+
+.official-info li{
+
+     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+
+}
+
+
 
 body {margin: 0;}

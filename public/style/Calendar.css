@@ -13,15 +13,21 @@
 /* Calendar Wrapper */
 .ui-datepicker {
     display: none;
-    width: 400px;
-    padding: 20px;
+    width: 100%;
+    background-image: url("/public/imgs/sbarV2.jpg");
+    background-size: 100%;
+
+
+    /*padding: 20px; */
+
     cursor: default;
 
     text-transform: uppercase;
     font-family: Tahoma;
     font-size: 12px;
 
-    background: #141517;
+    background: #e5e5e5;
+
 
 
     -webkit-box-shadow: 0px 1px 1px rgba(255,255,255, .1), inset 0px 1px 1px rgb(0,0,0);
@@ -32,7 +38,8 @@
 /* Calendar Header */
 .ui-datepicker-header {
     position: relative;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #d6d6d6;
 }
 
@@ -102,13 +109,6 @@
     /* background-image: url(../img/arrows.png); Pfeile für Monatsaenderung */
 }
 
-.ui-datepicker-prev span { background-position: 0px 0px; }
-
-.ui-datepicker-next span { background-position: -5px 0px; }
-
-.ui-datepicker-prev-hover span { background-position: 0px -10px; }
-
-.ui-datepicker-next-hover span { background-position: -5px -10px; }
 
 /* Calendar "Days" */
 .ui-datepicker-calendar th {
@@ -122,9 +122,8 @@
 
 .ui-datepicker-calendar td {
     padding: 0 7px;
-
     text-align: center;
-    line-height: 26px;
+    line-height: 20px;
 }
 
 .ui-datepicker-calendar .ui-state-default {
