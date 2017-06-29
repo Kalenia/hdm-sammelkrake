@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie W3C</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <script>
+        $(document).ready(function(){
+            $.getJSON("gallery.json.php").done(function(semester_list){
+                var list = $("select.semester_list");
+                var keys = Object.keys(semester_list);
+                for(var i = 0; i < keys.length; i++) {
+                    var key = keys[i];
+                    var name = semester_list[key];
+                    $("<option>").text(name).attr("key", key).appendTo(list);
+                }
+            });
+
+            $("select.semester_list").on("change", function(){
+                var key = $('option:selected', this).attr('key');
+                $.getJSON("gallery.json.php?semester=" + encodeURIComponent(key)).done(function(gallery){
+                    var list = $("div.w3-content").empty();
+                    var keys = Object.keys(gallery);
+                    for(var i = 0; i < keys.length; i++) {
+                        var name = keys[i];
+                        var image_url = gallery[name];
+                        if (i == 0) {
+                            $("<img class='mySlides'>").attr("src", "gallery.json.php?image=" + encodeURIComponent(image_url))
+                                .appendTo(list);
+                        } else {
+                            $("<img class='mySlides'>").attr({
+                                "src": "gallery.json.php?image=" + encodeURIComponent(image_url),
+                                "style": "display:none"
+                            })
+                                .appendTo(list);
+                        }
+                    }
+                    var x = document.getElementById("nav")
+                    if (x.style.display === 'none') {
+                        x.style.display = 'block';
+                    } else {
+                        x.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="titl" style="margin-top: 5%">
+        Kennst du schon ... ?
+    </div>
+    <div class="pic">
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" style="display: none"/>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div id="nav" style="display: none"  >
+            <button onclick="plusDivs(-1)" style="padding-left: 5%">&#10094;</button>
+            <button onclick="plusDivs(1)" style="padding-left: 85%">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="sel">
+        <select class="semester_list">
+        </select>
+    </div>
+</div>
+
+    <script>
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+
+            var x =  $("img.mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+
+    </script>
+</body>
+</html>

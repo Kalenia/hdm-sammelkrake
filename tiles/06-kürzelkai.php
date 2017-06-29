@@ -1,7 +1,7 @@
 <article id="kürzelkai" class="social unused" data-width="2" data-height="1">
 	<script>
 		$(document).ready(function(){
-			$('article#kürzelkai input').keypress(function(e){
+			$('article#kurzelkai input').keypress(function(e){
 				// We're only interested in the enter key, skip the rest
 				if (e.which != 13)
 					return true;

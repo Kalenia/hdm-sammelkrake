@@ -6,6 +6,30 @@
     margin: 0;
 }
 
+.wrap {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 10% 70% 10% 10%;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.titl {
+    grid-column: 1 / span 3; grid-row: 1 / span 1;
+}
+
+.pic {
+    grid-column: 2 / span 1; grid-row: 2 / span 1;
+}
+
+.nav {
+    grid-column: 1 / span 3; grid-row: 3 / span 1;
+}
+
+.sel {
+    grid-column: 1 / span 3; grid-row: 4 / span 1;
+    padding-bottom: 0%;
+}
+
 
 .offWorkingStuff {
 
@@ -38,11 +62,11 @@
 }
 
 .kennstDuSchon {
-    background: blue;
+    background-color: chartreuse;
     grid-column: 1 / span 1;  grid-row: 3 / span 2;
 }
 
-.kurzelKai {
+.kürzelKai {
     background: yellow;
     grid-column: 2 / span 1;  grid-row: 5 / span 1;
 }
@@ -69,10 +93,10 @@
     grid-column: 1 / span 1 ; grid-row: 5 / span 1;
 }
 
-.kennstDuSchon img {
-    width: 26%;
-    height: 26%;
-    padding: 5%;
+.mySlides {
+    width: 60%;
+    height:60%;
+    padding-left: 20%;
 }
 
 
