@@ -42,6 +42,12 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
 
             </article>
             <article class="officialNews">
+                <div class="zeug click_eff">
+                    <div class="vorne">
+                    </div>
+                    <div class="hinten">
+                    </div>
+                </div>
               <div>
                     <?php include("../tiles/ideas/04-official-infos.php")?>
                </div>
@@ -73,7 +79,7 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
             </article>
             <article class="importantNews">
                 <div>
-                    <?php include("../tiles/01-official-news.php")?>
+                    <?php include("../tiles/semGall.html")?>
                 </div>
             </article>
 
