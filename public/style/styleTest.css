@@ -6,13 +6,6 @@
     margin: 0;
 }
 
-.wrap {
-    display: grid;
-    width: 100%;
-    grid-template-rows: 10% 70% 10% 10%;
-    grid-template-columns: 10% 80% 10%;
-}
-
 .titl {
     grid-column: 1 / span 3; grid-row: 1 / span 1;
 }
@@ -38,8 +31,6 @@
 .officialNews {
     /* background-image: url("../imgs/testhintergrund.jpg"); */
     background-color: #d7ecfa;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     grid-column: 2 / span 1;  grid-row: 1 /span 1;
 }
 
@@ -49,9 +40,7 @@
 }
 
 .ownCloud {
-    background-image: url("../imgs/owncloudsoon.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: #3adb76;
     grid-column: 1 / span 1;  grid-row: 2 / span 1;
 }
 
@@ -75,16 +64,12 @@
     grid-column: 3 / span 1;  grid-row: 5 / span 1;
 }
 .sbar {
-    background-image: url("../imgs/sbarV2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: #a40000;
     grid-column:  3 / span 1;  grid-row: 4 / span 1;
 }
 
 .mensa {
-    background-image: url("../imgs/mensa.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: #5c4566;
     grid-column: 2 / span 1;  grid-row: 4 / span 1;
 }
 
