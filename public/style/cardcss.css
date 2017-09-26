@@ -15,9 +15,11 @@
   margin: 0;
 }
 
-/* card fronts and backs */
+
+
+/* card fronts and backs for every card */
 .card__front,
-.card__back {
+.card__back{
   position: absolute;
   top: 0;
   left: 0;
@@ -25,17 +27,69 @@
   height: 100%;
 }
 
+.card__front_1,
+.card__back_1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front_2,
+.card__back_2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* card fronts and backs visibility and transition */
 .card__front,
-.card__back {
+.card__back{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+
+.card__front_1,
+.card__back_1{
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
 }
 
+.card__front_2,
+.card__back_2{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+
+/* webkit-transform for every card*/
 .card__back {
   -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.card__back_1 {
+  -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
+
+}
+
+.card__back_2 {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+
 }
 
 /* card text */
@@ -48,22 +102,70 @@
   height: 25px;
   color: black;
   font-size: 20px;
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 
 }
 
-/* click effect */
+
+.card__text_1 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 25px;
+  color: black;
+  font-size: 15px;
+
+}
+
+.card__text_2 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 25px;
+  color: black;
+  font-size: 15px;
+
+}
+
+
+/* click effect for "offizielles arbeitsmaterial" */
 .card.effect__click.flipped .card__front {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .card.effect__click.flipped .card__back {
   -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+  transform: rotateY(0);
 }
 
-/* Image on card_back */
+
+/* click effect for "offizielle info" */
+.card.effect__click.flipped .card__front_1 {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back_1 {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+/* click effect for "Deine Daten */
+.card.effect__click.flipped .card__front_2 {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back_2 {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+/* Image on card_front's */
 .card__front{
   position: absolute;
   width: 100%;
@@ -73,6 +175,32 @@
   background-size: 100% 100%;
 }
 
+.card__front_1{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-image: url("/../imgs/infobildkrake.png");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+ }
+
+.card__front_2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/../imgs/deinedatenplatzhlter.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Design on card_back's */
+.card__back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #e0f3ff; /* Auch Hintergrundbild möglich */
+  background-size: 100% 100%;
+}
 
 
 

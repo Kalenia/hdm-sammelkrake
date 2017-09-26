@@ -1,7 +1,7 @@
 .wrapper {
     display: grid;
     width: 100%;
-    grid-template-rows:   250px 230px  250px 250px;
+    grid-template-rows:   250px 250px  250px 250px;
     grid-template-columns: 33.33% 33.33% 33.33%;
     margin: 0;
 }
@@ -116,7 +116,6 @@
 
 .official-info li{
 
-     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 
 }
 
