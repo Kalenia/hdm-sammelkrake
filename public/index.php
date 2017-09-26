@@ -39,17 +39,28 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
                                  <span class="card__text"> <?php include("../tiles/ideas/03-official-working-stuff.php")?></span>
                                </div>
                              </div><!-- /card -->
+            </article>
 
-            </article>
+
             <article class="officialNews">
-              <div>
-                    <?php include("../tiles/ideas/04-official-infos.php")?>
-               </div>
+                   <div class="card effect__click">
+                    <div class="card__front_1">
+                        </div>
+                         <div class="card__back_1">
+                          <span class="card__text_1">  <?php include("../tiles/ideas/04-official-infos.php")?></span>
+                        </div>
+                    </div><!-- /card -->
             </article>
+
+
             <article class="studentsStuff">
-            <div>
-                <?php include("../tiles/12-studentsStuff.html")?>
-            </div>
+            <div class="card effect__click">
+                                <div class="card__front_2">
+                                    </div>
+                                     <div class="card__back_2">
+                                      <span class="card__text_2">    <?php include("../tiles/12-studentsStuff.html")?></span>
+                                    </div>
+                                </div><!-- /card -->
             </article>
 
             <article class="ownCloud">
