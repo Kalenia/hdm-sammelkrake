@@ -1,5 +1,51 @@
 body { margin: 0; padding: 0; }
 header { margin: 0; padding: 0; }
+.wrapper {
+	display: grid;
+	width: 100%;
+	grid-template-rows:200px 1fr 200px 200px;
+	grid-template-columns: 20% 26% 27% 27%;
+	margin: 0;
+}
+
+aside {
+	background:blue;
+	grid-column-start:1;
+	grid-column-end:2;
+	grid-row-start:1;
+	grid-row-end:4;
+	height: 100%;
+}
+
+.officialNews {
+	background: cornflowerblue;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	padding-left: 7%;
+}
+
+.kennstDuSchon {
+	background: blue;
+	grid-column: 3 / span 1;
+	grid-row: 1 / span 1;
+	padding-left: 7%;
+}
+
+.ownCloud {
+	background: cadetblue;
+	grid-column: 4 / span 1;
+	grid-row: 1 / span 1;
+	padding-left: 7%;
+}
+
+.sbar {
+	background: lightseagreen;
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	padding-left: 7%;
+}
 
 /* global typography */
 body { font-size: small; font-family: sans-serif; color: hsl(0, 0%, 90%); background: hsl(0, 0%, 15%); text-shadow: 1px 1px 1px black; }
@@ -90,7 +136,7 @@ article#messi p { display: none; margin: 0; padding: 0; text-align: right; }
 article#messi a.active { margin: 0 0.25em; padding: 0 0.25em; background: hsla(0, 0%, 100%, 0.25); border-radius: 3px; }
 article#messi ul { clear: left; padding: 0; }
 article#messi ul ul { margin: -1px 0 0.5em 0; padding: 0 0 0 22px; border-top: 1px solid hsla(0, 0%, 100%, 0.25); }
-article#messi ul ul > li { margin: 0.25em 0px; }
+article#messi ul ul > li { margin: 0.25em 0; }
 article#messi ul li::before { content: ' '; left: -20px; top: 1px; width: 16px; height: 16px; background-repeat: no-repeat; }
 article#messi li.available::before { background-image: url(empathy-available.svg); }
 article#messi li.away::before { background-image: url(empathy-away.svg); }

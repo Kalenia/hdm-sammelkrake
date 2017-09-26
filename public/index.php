@@ -1,58 +1,118 @@
 <?php
-
 if ( ! isset($_SERVER['PHP_AUTH_USER']) ) {
 	header('WWW-Authenticate: Basic realm="Sammelkrake"');
 	header('HTTP/1.0 401 Unauthorized');
 	die("Bitte mit deinem HdM-Account anmelden");
 }
-
 const ROOT_PATH = '..';
 require_once(ROOT_PATH . '/include/view_helpers.php');
-
 ?>
+
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>HdM Sammelkrake</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<script src="scripts/jquery.js"></script>
-	<script src="scripts/jquery.grid.js"></script>
-	<script>
-		$(document).ready(function(){
-			$(window).resize(function(){
-				$('section').grid({ 'cell-width': 145, 'cell-height': 200, 'cell-spacing': 10 })//.triggerHandler('debug');
-			});
-			$(window).resize();
-		});
-	</script>
+    <meta charset="UTF-8">
+    <title>HdM Sammelkrake</title>
+    <link rel="stylesheet" href="style/styleTest.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="foundation-6/css/foundation.css">
+   <!-- <link rel="stylesheet" href="foundation-6/css/app.css"> -->
+
+    <link rel="stylesheet" href="../style/Calendar.css" media="screen">
+
+    <link rel="stylesheet" href="../style/cardcss.css">
+
+    <script src="scripts/jquery.js"></script>
+    	<script src="scripts/jquery.grid.js"></script>
+
 </head>
 <body>
 
-<header>
-	<h1><a href="/">HdM Sammelkrake</a></h1>
-	<p>Eine kleine Karte der Informationsquellen rund um die HdM</p>
-	
-	<ul id="legend">
-		<li class="official changing" title="Teilweise tägliche Meldungen aus offiziellen Informationskanälen der HdM"><span>Aktuelle offizielle Infos</span></li>
-		<li class="official" title="Informationsquellen für dein Studium"><span>Offizielle Informationsquellen</span></li>
-		<li class="social"><span>Soziales</span></li>
-		<!--<li class="projects" title="z.B. Projekte"><span>Eigene Aktivitäten</span></li>-->
-		<li class="misc"><span>Sonstiges</span></li>
-	</ul>
-</header>
+    <div class="wrapper">
 
-<section id="tiles">
+            <article class="offWorkingStuff">
+                             <div class="card effect__click">
+                               <div class="card__front">
+                               </div>
+                               <div class="card__back">
+                                 <span class="card__text"> <?php include("../tiles/ideas/03-official-working-stuff.php")?></span>
+                               </div>
+                             </div><!-- /card -->
 
-<?php foreach( glob('../tiles/*.php') as $tile ): ?>
-<?php	include($tile) ?> 
-<?php endforeach ?>
+            </article>
+            <article class="officialNews">
+                <div class="zeug click_eff">
+                    <div class="vorne">
+                    </div>
+                    <div class="hinten">
+                    </div>
+                </div>
+              <div>
+                    <?php include("../tiles/ideas/04-official-infos.php")?>
+               </div>
+            </article>
+            <article class="studentsStuff">
+            <div>
+                <?php include("../tiles/12-studentsStuff.html")?>
+            </div>
+            </article>
 
-</section>
+            <article class="ownCloud">
+                <div> </div>
+            </article>
+            <article class="schedule">
+                <div>
+                    <?php include("../tiles/02-schedule.php")?>
+                </div>
+            </article>
 
-<div id="details" class="inactive">
-	<article></article>
-</div>
+            <article class="kennstDuSchon">
+                <div>
+                     <?php include("../tiles/11-semGalW3C.html")?>
+                </div>
+            </article>
+            <article class="kürzelKai">
+                <div>
+                <?php include("../tiles/06-kürzelkai.php")?>
+                </div>
+            </article>
+            <article class="importantNews">
+                <div>
+                    <?php include("../tiles/semGall.html")?>
+                </div>
+            </article>
+
+        <article class="sbar">
+            <div>
+            </div>
+        </article>
+        <article class="mensa">
+            <div> </div>
+        </article>
+        <article class="calendar">
+             <div id="calendar"></div>
+        </article>
+
+    </div>
+
+        <script src="foundation-6/js/vendor/jquery.js"></script>
+                <script src="foundation-6/js/vendor/what-input.js"></script>
+                <script src="foundation-6/js/vendor/foundation.js"></script>
+                <script src="foundation-6/js/app.js"></script>
+                <script src="scripts/flip.js"></script>
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script src="../scripts/jquery-ui-datepicker.min.js"></script>
+
+    <script>
+        $('#calendar').datepicker({
+            inline: true,
+            firstDay: 1,
+            showOtherMonths: true,
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        });
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,137 @@
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-rows:   250px 230px  250px 250px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin: 0;
+}
+
+.wrap {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 10% 70% 10% 10%;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.titl {
+    grid-column: 1 / span 3; grid-row: 1 / span 1;
+}
+
+.pic {
+    grid-column: 2 / span 1; grid-row: 2 / span 1;
+}
+
+.nav {
+    grid-column: 1 / span 3; grid-row: 3 / span 1;
+}
+
+.sel {
+    grid-column: 1 / span 3; grid-row: 4 / span 1;
+}
+
+
+.offWorkingStuff {
+
+    grid-column: 1 / span 1;  grid-row: 1 / span 1;
+}
+
+.officialNews {
+   /* background-image: url("../imgs/testhintergrund.jpg"); */
+    background-color: #d7ecfa;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-column: 2 / span 1;  grid-row: 1 /span 1;
+}
+
+.studentsStuff {
+    background: lightskyblue;
+    grid-column: 3 / span 1;  grid-row: 1 / span 1;
+}
+
+.ownCloud {
+    background-image: url("../imgs/owncloudsoon.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-column: 1 / span 1;  grid-row: 2 / span 1;
+}
+
+.schedule {
+    background: #8ea5ec;
+    grid-column: 2 /span 2;  grid-row: 2 / span 2;
+}
+
+.kennstDuSchon {
+    background-color: #126195;
+    grid-column: 1 / span 1;  grid-row: 3 / span 2;
+}
+
+.kürzelKai {
+    background: #1fec82;
+    grid-column: 2 / span 1;  grid-row: 5 / span 1;
+}
+
+.importantNews {
+    background: #19ecd9;
+    grid-column: 3 / span 1;  grid-row: 5 / span 1;
+}
+.sbar {
+    background-image: url("../imgs/sbarV2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-column:  3 / span 1;  grid-row: 4 / span 1;
+}
+
+.mensa {
+    background-image: url("../imgs/mensa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-column: 2 / span 1;  grid-row: 4 / span 1;
+}
+
+.calendar {
+    grid-column: 1 / span 1 ; grid-row: 5 / span 1;
+}
+
+.mySlides {
+    width: 60%;
+    height:60%;
+    padding-left: 20%;
+}
+
+
+.official-info h2{
+    /* font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; */
+    font-family: "Georgia";
+    font-style: italic;
+    text-align: center;
+
+}
+
+.social h2 {
+    font-family: "Georgia";
+    font-style: italic;
+    text-align: center;
+}
+
+
+.official-info li{
+
+     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+
+}
+
+h2 {
+    font-family: "Georgia";
+    font-style: italic;
+    text-align: center;
+}
+
+.official li {
+    font-size: 15px;
+}
+
+body {margin: 0;}
+
+.schedule table {
+     /*font-size: 16px; */
+}

@@ -1,0 +1,112 @@
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-rows:   200px 200px  200px 200px 200px;
+    grid-template-columns: 6% 31% 31% 32%;
+    margin: 0;
+}
+
+aside {
+    background:green;
+    grid-column: 1 / span 1;  grid-row: 1 / span 5;
+    height: 100%;
+    width: 100%;
+}
+
+.offWorkingStuff {
+    background: cadetblue;
+    grid-column: 2 / span 1;  grid-row: 1 / span 1;
+    padding: 7%;
+}
+
+.officialNews {
+    background: cornflowerblue;
+    grid-column: 3 / span 1;  grid-row: 1 /span 1;
+    padding: 7%;
+}
+
+.studentsStuff {
+    background: lightskyblue;
+    grid-column: 4 / span 1;  grid-row: 1 / span 1;
+    padding: 7%;
+}
+
+.ownCloud {
+    background: palevioletred;
+    grid-column: 2 / span 1;  grid-row: 2 / span 1;
+    padding: 7%;
+}
+
+.schedule {
+    background: red;
+    grid-column: 3 /span 2;  grid-row: 2 / span 2;
+    padding: 7%;
+}
+
+.kennstDuSchon {
+    background: blue;
+    grid-column: 2 / span 1;  grid-row: 3 / span 2;
+    padding: 7%;
+}
+
+.kurzelKai {
+    background: yellow;
+    grid-column: 3 / span 1;  grid-row: 5 / span 1;
+    padding: 7%;
+}
+
+.importantNews {
+    background: yellow;
+    grid-column: 4 / span 1;  grid-row: 5 / span 1;
+    padding: 7%;
+}
+.sbar {
+    background: lightgreen;
+    grid-column: 4 / span 1;  grid-row: 4 / span 1;
+    padding: 7%;
+}
+
+.mensa {
+    background: limegreen;
+    grid-column: 3 / span 1;  grid-row: 4 / span 1;
+    padding: 7%;
+}
+
+.calendar {
+    background: #000000;
+    grid-column: 2 / span 1 ; grid-row: 5 / span 1;
+    padding: 0%;
+
+}
+
+.kennstDuSchon img {
+    width: 26%;
+    height: 26%;
+    padding: 0%;
+}
+
+body {margin: 0;}
+
+/* Naviagation an der Seite */
+.icon-bar {
+    width: 90px; /* Set a specific width */
+    height: 100%;
+    background-color: #555; /* Dark-grey background */
+}
+
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: deepskyblue; /* Add an active/current color */
+}

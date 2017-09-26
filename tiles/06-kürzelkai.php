@@ -11,7 +11,7 @@
 				if (search == '')
 					return false;
 				
-				$.ajax('ldap.json', {
+				$.ajax('ldap.json.php', {
 					data: {search: search}
 				}).done(function(data){
 					var list = $('<ul>');
