@@ -39,8 +39,9 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
                                  <span class="card__text"> <?php include("../tiles/ideas/03-official-working-stuff.php")?></span>
                                </div>
                              </div><!-- /card -->
-
             </article>
+
+
             <article class="officialNews">
                    <div class="card effect__click">
                     <div class="card__front_1">
@@ -50,6 +51,8 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
                         </div>
                     </div><!-- /card -->
             </article>
+
+
             <article class="studentsStuff">
             <div class="card effect__click">
                                 <div class="card__front_2">

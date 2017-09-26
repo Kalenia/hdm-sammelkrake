@@ -1,7 +1,7 @@
 .wrapper {
     display: grid;
     width: 100%;
-    grid-template-rows:   250px 250px  250px 250px;
+    grid-template-rows:   250px 218px  250px 250px;
     grid-template-columns: 33.33% 33.33% 33.33%;
     margin: 0;
 }
@@ -36,7 +36,7 @@
 }
 
 .officialNews {
-   /* background-image: url("../imgs/testhintergrund.jpg"); */
+    /* background-image: url("../imgs/testhintergrund.jpg"); */
     background-color: #d7ecfa;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -101,16 +101,12 @@
 
 .official-info h2{
     /* font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; */
-    font-family: "Georgia";
-    font-style: italic;
-    text-align: center;
+
 
 }
 
 .social h2 {
-    font-family: "Georgia";
-    font-style: italic;
-    text-align: center;
+
 }
 
 
@@ -132,5 +128,5 @@ h2 {
 body {margin: 0;}
 
 .schedule table {
-     /*font-size: 16px; */
+    font-size: 19px;
 }
