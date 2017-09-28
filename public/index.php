@@ -13,7 +13,7 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
 <head>
     <meta charset="UTF-8">
     <title>HdM Sammelkrake</title>
-    <link rel="stylesheet" href="style/styleTest.css">
+    <link rel="stylesheet" href="style/style.css">
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="foundation-6/css/foundation.css">

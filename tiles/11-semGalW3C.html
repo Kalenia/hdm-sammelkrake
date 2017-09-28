@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Galerie W3C</title>
+    <title>Galerie</title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -38,17 +38,11 @@
                                 .appendTo(list);
                         }
                     }
-                    var x = document.getElementById("nav")
-                    if (x.style.display === 'none') {
-                        x.style.display = 'block';
-                    } else {
-                        x.style.display = 'none';
-                    }
                 });
             });
         });
         $(document).ready(function(){
-            $("button#MIB").click(function(){
+            $("button").click(function(){
                 $("div#content").toggleClass("select");
             });
         });
@@ -78,7 +72,6 @@
 
         div#content.slider > div.selectList { display: none; }
         div#content.slider > div.imgSlider { display: block; }
-        div#content.slider > div.courseButtons { display: none; }
 
     </style>
 </head>
@@ -135,7 +128,7 @@
     function showDivs(n) {
         var x =  $("img.mySlides");
         if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length} ;
+        if (n < 1) {slideIndex = x.length}
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
