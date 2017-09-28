@@ -61,7 +61,9 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
         </article>
 
         <article class="ownCloud">
-            <div> </div>
+            <div>
+            <a href="https://cloud.mi.hdm-stuttgart.de/index.php/s/02IcLpPaDYkCJqw"> OwnCloud Zugriff</a>
+            </div>
         </article>
 
         <article class="schedule">
