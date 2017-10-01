@@ -20,7 +20,7 @@ $context = stream_context_create(array(
 ));
 
 if ( !isset($_GET['semester']) ) {
-	$html_source = file_get_contents("https://www.hdm-stuttgart.de/mm/student/studienanfaenger/", false, $context);
+	$html_source = file_get_contents("https://www.hdm-stuttgart.de/mi/student/studienanfaenger/", false, $context);
 	
 	$doc = @DOMDocument::loadHTML($html_source);
 	$xpath = new DOMXPath($doc);
@@ -37,7 +37,7 @@ if ( !isset($_GET['semester']) ) {
 	die(json_encode($semester_list_object));
 } else {
 	$escaped_id = urlencode($_GET['semester']);
-	$url = "https://www.hdm-stuttgart.de/mm/student/studienanfaenger/?directory=$escaped_id&Anzeige=Anzeigen";
+	$url = "https://www.hdm-stuttgart.de/mi/student/studienanfaenger/?directory=mib_ss2015&Anzeige=Anzeigen#";
 	$html_source = file_get_contents($url, false, $context);
 	
 	$doc = @DOMDocument::loadHTML($html_source);
