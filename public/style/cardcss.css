@@ -18,8 +18,8 @@
 
 
 /* card fronts and backs for every card */
-.card__front,
-.card__back{
+.card__front_WorkingStuff,
+.card__back_WorkingStuff{
   position: absolute;
   top: 0;
   left: 0;
@@ -27,8 +27,8 @@
   height: 100%;
 }
 
-.card__front_1,
-.card__back_1{
+.card__front_officialNews,
+.card__back_officialNews{
   position: absolute;
   top: 0;
   left: 0;
@@ -36,8 +36,26 @@
   height: 100%;
 }
 
-.card__front_2,
-.card__back_2{
+.card__front_studentsStuff,
+.card__back_studentsStuff{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front_SBar,
+.card__back_SBar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front_mensa,
+.card__back_mensa{
   position: absolute;
   top: 0;
   left: 0;
@@ -48,8 +66,8 @@
 
 
 /* card fronts and backs visibility and transition */
-.card__front,
-.card__back{
+.card__front_WorkingStuff,
+.card__back_WorkingStuff{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
@@ -57,16 +75,32 @@
 }
 
 
-.card__front_1,
-.card__back_1{
+.card__front_officialNews,
+.card__back_officialNews{
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
 }
 
-.card__front_2,
-.card__back_2{
+.card__front_studentsStuff,
+.card__back_studentsStuff{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.card__front_SBar,
+.card__back_SBar{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.card__front_mensa,
+.card__back_mensa{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
@@ -75,25 +109,38 @@
 
 
 /* webkit-transform for every card*/
-.card__back {
+/* other propertys also possible for card back like background color etc */
+.card__back_WorkingStuff {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
-.card__back_1 {
+.card__back_officialNews {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 
 }
 
-.card__back_2 {
+.card__back_studentsStuff {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+
+}
+
+.card__back_SBar {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+
+}
+
+.card__back_mensa {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 
 }
 
 /* card text */
-.card__text {
+.card__text_WorkingStuff {
   top: 0;
   right: 0;
   bottom: 0;
@@ -101,12 +148,24 @@
   margin: auto;
   height: 25px;
   color: black;
-  font-size: 20px;
+  font-size: 17px;
 
 }
 
 
-.card__text_1 {
+.card__text_officialNews {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 25px;
+  color: black;
+  font-size: 17px;
+
+}
+
+.card__text_studentsStuff {
   top: 0;
   right: 0;
   bottom: 0;
@@ -118,7 +177,7 @@
 
 }
 
-.card__text_2 {
+.card__text_SBar {
   top: 0;
   right: 0;
   bottom: 0;
@@ -130,43 +189,77 @@
 
 }
 
+.card__text_mensa {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 25px;
+  color: black;
+  font-size: 15px;
+
+}
 
 /* click effect for "offizielles arbeitsmaterial" */
-.card.effect__click.flipped .card__front {
+.card.effect__click.flipped .card__front_WorkingStuff {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
-.card.effect__click.flipped .card__back {
+.card.effect__click.flipped .card__back_WorkingStuff {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
 }
 
 
 /* click effect for "offizielle info" */
-.card.effect__click.flipped .card__front_1 {
+.card.effect__click.flipped .card__front_officialNews {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
-.card.effect__click.flipped .card__back_1 {
+.card.effect__click.flipped .card__back_officialNews {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
 }
 
-/* click effect for "Deine Daten */
-.card.effect__click.flipped .card__front_2 {
+/* click effect for "Deine Daten" */
+.card.effect__click.flipped .card__front_studentsStuff {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 
-.card.effect__click.flipped .card__back_2 {
+.card.effect__click.flipped .card__back_studentsStuff {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+/* click effect for "SBar" */
+.card.effect__click.flipped .card__front_SBar {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back_SBar {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+
+/* click effect for "Mensa" */
+.card.effect__click.flipped .card__front_mensa {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back_mensa {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
 }
 
 /* Image on card_front's */
-.card__front{
+.card__front_WorkingStuff{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -175,7 +268,7 @@
   background-size: 100% 100%;
 }
 
-.card__front_1{
+.card__front_officialNews{
    position: absolute;
    width: 100%;
    height: 100%;
@@ -184,7 +277,7 @@
    background-size: 100% 100%;
  }
 
-.card__front_2{
+.card__front_studentsStuff{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -193,15 +286,41 @@
   background-size: 100% 100%;
 }
 
-/* Design on card_back's */
-.card__back{
+.card__front_SBar{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #e0f3ff; /* Auch Hintergrundbild möglich */
+  background-image: url("/../imgs/sbarV2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.card__front_Owncloud{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.card__front_mensa{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/../imgs/mensa.jpg");
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 
-
+/* Background Verlinkung der Owncloud */
+#owncloud-background_link {
+  background-image: url("/../imgs/owncloud.jpg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-indent:-9999px;
+}
 

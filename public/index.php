@@ -32,38 +32,40 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
     <div class="wrapper">
         <article class="offWorkingStuff">
             <div class="card effect__click">
-                <div class="card__front">
+                <div class="card__front_WorkingStuff">
                 </div>
-                <div class="card__back">
-                    <span class="card__text"> <?php include("../tiles/ideas/03-official-working-stuff.php")?></span>
+                <div class="card__back_WorkingStuff">
+                    <span class="card__text_WorkingStuff"> <?php include("../tiles/ideas/03-official-working-stuff.php")?></span>
                 </div>
             </div><!-- /card -->
         </article>
 
         <article class="officialNews">
             <div class="card effect__click">
-                <div class="card__front_1">
+                <div class="card__front_officialNews">
                 </div>
-                <div class="card__back_1">
-                    <span class="card__text_1">  <?php include("../tiles/ideas/04-official-infos.php")?></span>
+                <div class="card__back_officialNews">
+                    <span class="card__text_officialNews">  <?php include("../tiles/ideas/04-official-infos.php")?></span>
                 </div>
             </div><!-- /card -->
         </article>
 
         <article class="studentsStuff">
             <div class="card effect__click">
-                <div class="card__front_2">
+                <div class="card__front_studentsStuff">
                 </div>
-                <div class="card__back_2">
-                    <span class="card__text_2">    <?php include("../tiles/12-studentsStuff.html")?></span>
+                <div class="card__back_studentsStuff">
+                    <span class="card__text_studentsStuff">    <?php include("../tiles/12-studentsStuff.html")?></span>
                 </div>
             </div><!-- /card -->
         </article>
 
         <article class="ownCloud">
-            <div>
-            <a href="https://cloud.mi.hdm-stuttgart.de/index.php/s/02IcLpPaDYkCJqw"> OwnCloud Zugriff</a>
-            </div>
+              <div class="card effect__click">
+               <div class="card__front_Owncloud">
+               <a href="https://cloud.mi.hdm-stuttgart.de/index.php/s/02IcLpPaDYkCJqw" id="owncloud-background_link">Owncloud</a>
+               </div>
+               </div>
         </article>
 
         <article class="schedule">
@@ -91,12 +93,27 @@ require_once(ROOT_PATH . '/include/view_helpers.php');
          </article>
 
          <article class="sbar">
-            <div>
-            </div>
+             <div class="card effect__click">
+                <div class="card__front_SBar">
+                    </div>
+                        <div class="card__back_SBar">
+                                <span class="card__text_SBar">
+                                <p> Momentan Deaktiviert </p>
+                                </span>
+                         </div>
+                </div><!-- /card -->
          </article>
 
         <article class="mensa">
-            <div> </div>
+            <div class="card effect__click">
+                           <div class="card__front_mensa">
+                               </div>
+                                   <div class="card__back_mensa">
+                                           <span class="card__text_mensa">
+                                           <p> Momentan Deaktiviert </p>
+                                           </span>
+                                    </div>
+                           </div><!-- /card -->
         </article>
 
         <article class="calendar">
